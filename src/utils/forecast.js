@@ -9,7 +9,7 @@ const forecast = (lat, long, callback) => {
         } else if (body.message) {
             callback('Unable to find forecast', undefined)
         } else {
-            callback(undefined, "It is currently " + body.main.temp + " degrees out. And humidity for this place is " + body.main.humidity + ".")
+            callback(undefined, "It is currently " + body.main.temp + " degrees out.")
         }
     })
 }
